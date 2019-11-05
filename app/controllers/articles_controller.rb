@@ -1,6 +1,10 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
+  # TODO
+  # Add alerts after editin and deleting and creating
+  # Implement ace-editor
+
   def index
     @articles = Article.all
   end
